@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:elevation="10dp"
+    android:orientation="vertical"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_launcher_sign_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/input_LBL_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Select a budget Item"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="italic|bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/item_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:entries="@array/items"
+                android:gravity="center"></Spinner>
+
+            <EditText
+                android:id="@+id/input_EDT_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter amount:"
+                android:inputType="number"
+                android:textColor="#000"
+                android:textColorHint="#000"></EditText>
+
+            <EditText
+                android:id="@+id/input_EDT_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Note:"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/input_BTN_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#F32424"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textStyle="bold">
+
+                </com.google.android.material.button.MaterialButton>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/input_BTN_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#76BA99"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="#000">
+
+                </com.google.android.material.button.MaterialButton>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

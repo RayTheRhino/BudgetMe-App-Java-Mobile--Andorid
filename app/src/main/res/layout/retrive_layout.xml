@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="10dp"
+    android:orientation="vertical"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/retrive_item"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item name:   "
+                android:textColor="#413F42"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/retrive_amount"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0$"
+                android:textColor="#413F42"
+                android:textSize="18sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/retrive_Note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Note:   "
+                android:layout_marginLeft="10dp"
+                android:textColor="#413F42"
+                android:textSize="18sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/retrive_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date:   "
+                android:layout_marginLeft="10dp"
+                android:textColor="#413F42"
+                android:textSize="18sp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/retrive_IMV_house"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/linearlayout"
+            android:src="@drawable/ic_house"></ImageView>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
