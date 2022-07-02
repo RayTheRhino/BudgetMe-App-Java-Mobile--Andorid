@@ -1,4 +1,4 @@
-package com.example.budgetme;
+package com.example.budgetme.Activites;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,8 +13,10 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.budgetme.R;
+import com.example.budgetme.SupportActivity;
+import com.example.budgetme.TodaySpendingActivity;
 import com.google.android.material.button.MaterialButton;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -32,7 +34,6 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Map;
-import java.util.Objects;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -230,6 +231,7 @@ public class MenuActivity extends AppCompatActivity {
                     totalAmountBudget = 0;
                     main_LBL_budgetUpd.setText("$" + String.valueOf(0));
                 }
+                getSavings();
             }
 
             @Override
@@ -280,7 +282,7 @@ public class MenuActivity extends AppCompatActivity {
         main_CRD_support.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MenuActivity.this,SupportActivity.class);
+                Intent intent = new Intent(MenuActivity.this, SupportActivity.class);
                 startActivity(intent);
             }
         });

@@ -1,4 +1,4 @@
-package com.example.budgetme;
+package com.example.budgetme.Activites;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.budgetme.ForgotPassword;
+import com.example.budgetme.R;
+import com.example.budgetme.SignUp;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.button.MaterialButton;
@@ -68,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         signIn_BTN_forgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,ForgotPassword.class);
+                Intent intent = new Intent(MainActivity.this, ForgotPassword.class);
                 startActivity(intent);
             }
         });

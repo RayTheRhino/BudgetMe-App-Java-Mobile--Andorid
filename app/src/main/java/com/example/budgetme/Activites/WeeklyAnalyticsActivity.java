@@ -1,13 +1,11 @@
-package com.example.budgetme;
+package com.example.budgetme.Activites;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,6 +17,7 @@ import com.anychart.chart.common.dataentry.ValueDataEntry;
 import com.anychart.charts.Pie;
 import com.anychart.enums.Align;
 import com.anychart.enums.LegendLayout;
+import com.example.budgetme.R;
 import com.google.android.material.textview.MaterialTextView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -32,10 +31,7 @@ import org.joda.time.DateTime;
 import org.joda.time.MutableDateTime;
 import org.joda.time.Weeks;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 import java.util.Map;
 
@@ -723,10 +719,10 @@ public class WeeklyAnalyticsActivity extends AppCompatActivity {
                         weeklyRealationSpending.setText("Less then 50%");
                         weeklyRealationSpending_IMG.setImageResource(R.drawable.ic_blue);
                     } else if (monthPrecent >= 50 && monthPrecent < 100) {
-                        weeklyRealationSpending.setText(monthPrecent+"%"+" used of "+weekTotalSpentAmountRatio);
+                        weeklyRealationSpending.setText(" between 50%-90%");
                         weeklyRealationSpending_IMG.setImageResource(R.drawable.ic_pink);
                     } else {
-                        weeklyRealationSpending.setText(monthPrecent+"%"+" used of "+weekTotalSpentAmountRatio);
+                        weeklyRealationSpending.setText("Above 100%\"");
                         weeklyRealationSpending_IMG.setImageResource(R.drawable.ic_red);
                     }
 

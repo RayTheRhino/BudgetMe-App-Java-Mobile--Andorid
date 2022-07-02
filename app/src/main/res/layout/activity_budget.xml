@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/ic_launcher_sign_background"
     android:orientation="vertical"
-    tools:context=".BudgetActivity">
+    tools:context=".Activites.BudgetActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

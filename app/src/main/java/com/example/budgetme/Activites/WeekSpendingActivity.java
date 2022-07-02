@@ -1,4 +1,4 @@
-package com.example.budgetme;
+package com.example.budgetme.Activites;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
 
+import com.example.budgetme.Data;
+import com.example.budgetme.R;
+import com.example.budgetme.WeekSpendingAdapter;
 import com.google.android.material.textview.MaterialTextView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;

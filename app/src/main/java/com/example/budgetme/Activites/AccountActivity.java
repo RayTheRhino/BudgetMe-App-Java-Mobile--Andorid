@@ -1,10 +1,11 @@
-package com.example.budgetme;
+package com.example.budgetme.Activites;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.example.budgetme.R;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class AccountActivity extends AppCompatActivity {

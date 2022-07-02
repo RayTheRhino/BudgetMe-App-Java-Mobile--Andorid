@@ -1,4 +1,4 @@
-package com.example.budgetme;
+package com.example.budgetme.Activites;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -13,13 +13,14 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.budgetme.Data;
+import com.example.budgetme.R;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -104,6 +105,7 @@ public class BudgetActivity extends AppCompatActivity {
                         totalamount+=data.getAmount();
                         String sTotal = String.valueOf("Month Budget: "+ totalamount);
                         budget_LBL_totalBudgetAmount.setText(sTotal);
+
                     }
                     int weeklyBudget = totalamount/4;
                     int dailyBudget = totalamount/30;

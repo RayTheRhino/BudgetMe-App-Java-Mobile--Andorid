@@ -17,40 +17,40 @@
             android:name=".SupportActivity"
             android:exported="false" />
         <activity
-            android:name=".AccountActivity"
+            android:name=".Activites.AccountActivity"
             android:exported="false" />
         <activity
-            android:name=".MonthlyAnalyticsActivity"
+            android:name=".Activites.MonthlyAnalyticsActivity"
             android:exported="false" />
         <activity
-            android:name=".WeeklyAnalyticsActivity"
+            android:name=".Activites.WeeklyAnalyticsActivity"
             android:exported="false" />
         <activity
-            android:name=".DailyAnalyticsActivity"
+            android:name=".Activites.DailyAnalyticsActivity"
             android:exported="false" />
         <activity
-            android:name=".ChooseAnalyticActivity"
+            android:name=".Activites.ChooseAnalyticActivity"
             android:exported="false" />
         <activity
-            android:name=".WeekSpendingActivity"
+            android:name=".Activites.WeekSpendingActivity"
             android:exported="false" />
         <activity
             android:name=".TodaySpendingActivity"
             android:exported="false" />
         <activity
-            android:name=".BudgetActivity"
+            android:name=".Activites.BudgetActivity"
             android:exported="false" />
         <activity
             android:name=".ForgotPassword"
             android:exported="false" />
         <activity
-            android:name=".MenuActivity"
+            android:name=".Activites.MenuActivity"
             android:exported="false" />
         <activity
             android:name=".SignUp"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Activites.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

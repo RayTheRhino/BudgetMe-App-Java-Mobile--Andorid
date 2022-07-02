@@ -2,23 +2,23 @@ package com.example.budgetme;
 
 public class User {
 
-    public String Name, email;
+    public String name, email;
 
     public User() {
 
     }
 
-    public User(String Name, String email){
-        this.Name = Name;
-        this.email= email;
+    public User(String inputName, String inputEmail){
+        this.name = inputName;
+        this.email= inputEmail;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public String getEmail() {

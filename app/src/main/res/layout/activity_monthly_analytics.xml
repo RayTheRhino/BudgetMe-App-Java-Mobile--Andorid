@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/ic_launcher_sign_up_background"
-    tools:context=".MonthlyAnalyticsActivity">
+    tools:context=".Activites.MonthlyAnalyticsActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/analystic_ToolBar"

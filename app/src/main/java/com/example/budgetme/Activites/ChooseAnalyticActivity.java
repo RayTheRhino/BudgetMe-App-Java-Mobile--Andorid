@@ -1,4 +1,4 @@
-package com.example.budgetme;
+package com.example.budgetme.Activites;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toolbar;
+
+import com.example.budgetme.R;
 
 public class ChooseAnalyticActivity extends AppCompatActivity {
     private Toolbar main_ToolBar;
