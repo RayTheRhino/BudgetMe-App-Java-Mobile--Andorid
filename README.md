@@ -6,7 +6,7 @@ BudgetMe is a budget management application that enables you to track your finan
 Created by Chen Maimon.
 
 ## Video
-https://example.com/budgetme-preview.gif)](https://www.youtube.com/watch?v=dmeiVUp1BMc&ab_channel=ChenMaimon
+https://www.youtube.com/watch?v=dmeiVUp1BMc&ab_channel=ChenMaimon
 
 
 
